@@ -3,7 +3,7 @@ Here is where you create all the functions that will do the routing for your app
 */
 var express = require('express');
 var router = express.Router();
-var cat = require('../models/cat.js');
+var cat = require('../models/burger.js');
 
 router.get('/', function (req, res) {
 	res.redirect('/cats');
@@ -18,7 +18,7 @@ router.get('/cats', function (req, res) {
 });
 
 router.post('/cats/create', function (req, res) {
-	cat.create(['name', 'sleepy'], [req.body.name, req.body.sleepy], function () {
+	cat.create(['name', 'sleepy'], [req.body.name, 0], function () {
 		res.redirect('/cats');
 	});
 });

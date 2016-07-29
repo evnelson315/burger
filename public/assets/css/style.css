@@ -2,6 +2,7 @@ li {
   background: #FAEBD7;
   margin: 5px;
   padding: 5px;
+  width: 100px;
 }
 
 .label {
@@ -12,8 +13,14 @@ li {
   background: aqua;
   margin: 5px;
   padding: 5px;
+  width: 200px;
+
 }
 
 .form-group {
   margin-bottom: 5px;
+}
+
+.devour{
+  float:right;
 }
