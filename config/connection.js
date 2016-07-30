@@ -25,9 +25,9 @@ var source = {
 
     localhost: {
         port: 3306,
-        host: 'tviw6wn55xwxejwj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-        user: 'u8dd0j21ow03sod4',
-        password: "r8tq2xtmn7oovbrf",
+        host: 'localhost',
+        user: 'root',
+        password: "root",
         database: "cat_db"
     },
     jawsDB: {
