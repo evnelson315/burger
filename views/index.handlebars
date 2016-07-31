@@ -5,13 +5,13 @@
 <h2>Burgers to Devour!</h2>
 
 <ul>
-  {{#each cats}}
-    {{#unless this.sleepy}}
+  {{#each burger}}
+    {{#unless this.devour}}
       <li>
         {{this.name}}
 
         <form action="cats/update/{{this.id}}?_method=PUT" method="POST">
-          <input type="hidden" name="sleepy" value="true">
+          <input type="hidden" name="devour" value="true">
           <button type="submit">EAT ME!</button>
         </form>
        
@@ -26,12 +26,12 @@
 !</h2>
 
 <ul>
-  {{#each cats}}
-    {{#if this.sleepy}}
+  {{#each burger}}
+    {{#if this.devour}}
       <li>
         {{this.name}}
 
-        <form action="cats/update/{{this.id}}?_method=PUT" method="POST">
+        <form action="burger/update/{{this.id}}?_method=PUT" method="POST">
           <input type="hidden" name="sleepy" value="false">
           <button type="submit">GIT BURGER CREATE!</button>
         </form>
@@ -41,7 +41,7 @@
 </ul>
 
 <h2>Create a Burger!</h2>
-<form class="create-update-form" action="cats/create" method="POST">
+<form class="create-update-form" action="burger/create" method="POST">
 
   <div class="form-group">
     <label for="ca">Burger Name:</label>
