@@ -7,7 +7,7 @@ var mysql = require('mysql');
 // 	host: 'localhost',
 // 	user: 'root',
 // 	password: 'root',
-// 	database: 'cat_db',
+// 	database: 'burger_db',
 // });
 
 // connection.connect(function (err) {
@@ -28,7 +28,7 @@ var source = {
         host: 'localhost',
         user: 'root',
         password: "r8tq2xtmn7oovbrf",
-        database: "cat_db"
+        database: "burger_db"
     },
     jawsDB: {
          port: 3306,
